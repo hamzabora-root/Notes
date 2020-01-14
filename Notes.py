@@ -35,6 +35,8 @@ def order_num():
     liste = []
     liste = sorted(books.readlines())
     for i in liste :
+        if i == '\n':
+            continue
         num+=1
         print(num,i)
 #Kullanıcı için bilgilendirici bir not- MENU;
